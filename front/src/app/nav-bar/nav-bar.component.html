@@ -1,13 +1,57 @@
-<nav class="opacity p-6">
+<nav class="bg-gray-800 p-6 hidden sm:block ">
   <div class="max-w-7xl mx-auto flex justify-between items-center">
       <div>
           <a href="#" class="text-white font-bold text-xl">Logo</a>
       </div>
-      <div class="flex space-x-4">
-          <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
-          <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Acerca</a>
-          <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
-          <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+      <div class="flex items-center">
+        <input type="text" placeholder="Buscar" class="bg-gray-200 text-gray-800 px-4 py-2 rounded-l-md focus:outline-none focus:ring focus:ring-pink-800" id="search">
+        <button class="bg-gray-200 text-gray-800 border-l border-black px-4 py-2 rounded-r-md focus:outline-none focus:ring focus:ring-purple-800">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+
+        </button>
+      </div>
+
+      <div class=" space-x-4 " >
+          <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Iniciar sesion</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">registrarse</a>
+      </div>
+
+  </div>
+</nav>
+<!--only movile.............-->
+<nav class="bg-gray-800 lg:hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+              <a href="#" class="text-white font-bold text-xl">Logo</a>
+          </div>
+          <div class="hidden sm:block">
+              <div class="ml-10 flex items-baseline space-x-4">
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Acerca</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+              </div>
+          </div>
+          <div class="block sm:hidden">
+              <button class="mobile-menu-button">
+                  <!-- Ícono de menú para dispositivos móviles -->
+              </button>
+          </div>
+      </div>
+  </div>
+  <!-- Menú desplegable para dispositivos móviles -->
+  <div class="sm:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="#" class="block text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium">Inicio</a>
+          <a href="#" class="block text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium">Acerca</a>
+          <a href="#" class="block text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium">Servicios</a>
+          <a href="#" class="block text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium">Contacto</a>
       </div>
   </div>
 </nav>
+
+<hr>
+
